@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stopwatch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@736&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+
+    .container {
+        /* background-color: black; */
+        height: 300px;
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+
+    #display {
+        color: goldenrod;
+        width: 500px;
+        font-size: 72px;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    .buttons {
+        /* text-align: center; */
+        /* background-color: #4CAF50; */
+        /* Green */
+        border: none;
+        color: white;
+        /* background-color: rgb(250, 173, 211); */
+        border-radius: 50px;
+        padding: 10px 10px;
+        text-align: center;
+        width: 150px;
+        margin: 0px auto;
+        /* text-decoration: none; */
+        /* display: inline-block; */
+        font-size: 16px;
+    }
+    .buttons :hover{
+
+        border-radius: 50px;
+        background-color:rgb(250, 250, 115);
+        padding: 5px 10px;
+        margin : 5px auto;
+        color: red;
+    }
+    .name{
+        height:70px;
+        width: 320px;
+        /* background-color: rgb(233, 226, 208); */
+        font-size: 50px;
+        font-weight: 100;
+        text-align: center;
+        margin: 0px auto;
+        opacity: 0.6;
+        z-index: -1;
+        color :red;
+        font-family: 'Orbitron', sans-serif;
+        background-color: rgb(24, 23, 23);
+    }
+    #startStop,#reset{
+        background-color:khaki;
+        border-radius: 40px;
+        margin: 0px auto;
+        height: 50px;
+        width: 70;
+        margin: 10px;
+        border: none;
+    }
+    .img{
+        height: 200px;
+        width: 500px;
+        display: block;
+        /* position: relative; */
+        margin-left: auto;
+        margin-right: auto;
+        /* position: relative; */
+        /* align-items: center; */
+        /* text-emphasis: center; */
+        /* justify-content: center; */
+        margin: 17px auto;
+        opacity: 0.5;
+        border-radius: 10px;
+        /* padding: 5px 10px; */
+    }
+    .pack{
+        margin: 4em auto;
+        text-align: center;
+        /* background-color: blanchedalmond; */
+        /* opacity: 0.75; */
+        height: 400px;
+        width: fit-content;
+        border-radius: 70px;
+    }
+    .circle{
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        position: relative;
+        /* display:block; */
+        text-align: center;
+        background-color: darkgray;
+        opacity: 0.66;
+    }
+</style>
+
+<body>
+    <div class="pack">
+
+        <section class="box">
+            <div class="name">StopWatch</div>
+            <div><img  class="img" src="https://images.unsplash.com/photo-1501139083538-0139583c060f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="image"></div>
+            <div class="container">
+
+                <div class="circle" id="display">
+                    00:00:00
+                </div>
+
+                <div class="buttons">
+                    <button id="startStop" onclick="startStop()">Start</button> <button id="reset"
+                        onclick="reset()">Reset</button>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
